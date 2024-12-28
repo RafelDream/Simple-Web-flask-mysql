@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <link href="static/css/daftar.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow" style="width: 400px;">
+        <div class="card-header text-center">
+            <h3>Daftar</h3>
+        </div>
+        <div class="card-body">
+            <form method="POST" action="/daftar">
+                <div class="mb-3">
+                    <label for="username" class="form-label required">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Masukkan username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="nim" class="form-label required">NIM</label>
+                    <input type="nim" class="form-control" id="nim" name="nim" placeholder="Masukkan Nim" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label required">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Masukkan email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="jurusan" class="form-label required">Jurusan</label>
+                    <input type="jurusan" class="form-control" id="jurusan" name="jurusan" placeholder="Masukkan jurusan" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label required">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan password" required>
+                </div>
+                <button type="submit" class="btn btn-custom w-100">Daftar</button>
+            </form>
+            <div class="text-center mt-3">
+                <p>Sudah punya akun? <a href="/">Login di sini</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

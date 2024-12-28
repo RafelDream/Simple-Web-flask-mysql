@@ -1,0 +1,111 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f9;
+}
+
+.sidebar {
+    width: 250px;
+    background: #4e0606;
+    color: #0ebddb;
+    position: fixed;
+    height: 100vh;
+    padding-top: 20px;
+    transition: all 0.3s;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background: #574949;
+    border-radius: 5px;
+}
+
+.sidebar a.active {
+    background: #bd6666;
+    border-radius: 5px;
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+.tab-content {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.navbar {
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .btn {
+    margin-right: 10px;
+}
+
+.list-group-item {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.table {
+    background-color: #fff;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #000000;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.student-data-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-data-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.d-grid .btn {
+    padding: 10px;
+}

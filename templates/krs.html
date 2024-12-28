@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+
+    <link href="static/css/dasbor.css" rel="stylesheet">
+</head>
+<body>
+    
+    {% include 'header.html' %}
+ 
+    <div class="content">
+        <h2>KRS</h2>
+        <form method="POST">
+            <div class="row mb-3">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="kode">Kode</label>
+                        <input type="number" class="form-control" name="kode" id="kode" placeholder="Kode Matkul"
+                            required="required">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="matkul">Mata Kuliah</label>
+                        <input type="text" class="form-control" name="matkul" id="matkul" placeholder="Nama Matkul"
+                            required="required">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="sks">SKS</label>
+                        <input type="number" class="form-control" name="sks" id="sks" placeholder="SKS"
+                            required="required">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="nilai">Nilai</label>
+                        <input type="number" class="form-control" name="nilai" id="nilai" placeholder="Nilai"
+                            max="100" min="1" required="required">
+                    </div>
+
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button type="submit" name="submit" id="submit" class="btn btn-success btn-block">Kirim</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Kode</th>
+                <th>Mata Kuliah</th>
+                <th>SKS</th>
+                <th>Nilai</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    {% for matkul in list_matkul %}
+                    <tr>
+                        <td>{{ matkul.kode_matkul }}</td>
+                        <td>{{ matkul.matkul }}</td>
+                        <td>{{ matkul.sks }}</td>
+                        <td>{{ matkul.nilai }}</td>
+                    </tr>
+                    {% endfor %}
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+</body>
+</html>

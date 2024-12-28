@@ -1,0 +1,37 @@
+
+body {
+    background-color: #f4f7fa;
+    font-family: 'Arial', sans-serif;
+}
+.card {
+    border-radius: 12px;
+}
+.card-header {
+    background-color: #00ffbb;
+    color: white;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+.required::after {
+    content: " *";
+    color: rgb(255, 0, 0);
+}
+.btn-custom {
+    background-color: #0e798a;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 0;
+}
+.btn-custom:hover {
+    background-color: #218838;
+}
+.text-center a {
+    color: #28a745;
+}
+.text-center a:hover {
+    color: #218838;
+}
+.form-control {
+    border-radius: 8px;
+}
+ 
